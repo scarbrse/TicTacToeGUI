@@ -260,7 +260,7 @@ public class TicTacToeFrame extends JFrame {
                         TicTacToeMoves clicked = (TicTacToeMoves) e.getSource();
                         JFrame frame = new JFrame("JOptionPane");
                         if (!clicked.getText().isBlank()) {
-                            JOptionPane.showMessageDialog(frame, "Already Taken! Take another move.", "[Error] Invalid Input", JOptionPane.ERROR_MESSAGE);
+                            JOptionPane.showMessageDialog(frame, "Already taken. Make a valid move.", "[Error] Invalid Input", JOptionPane.ERROR_MESSAGE);
                             return;
                         }
                         clicked.setText(String.valueOf(player));
